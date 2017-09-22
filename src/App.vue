@@ -131,4 +131,12 @@ td {
 label, .btn.btn-primary {
   margin: 5px 10px;
 }
+.btn.btn-primary {
+  background-color: blue;
+  border-color: blue;
+}
+.btn.btn-primary:hover {
+  background-color: red;
+  border-color: red;
+}
 </style>
