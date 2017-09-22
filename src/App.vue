@@ -125,4 +125,10 @@ export default {
 td {
   text-align: left;
 }
+.panel.panel-default {
+  padding: 2% 0;
+}
+label, .btn.btn-primary {
+  margin: 5px 10px;
+}
 </style>
