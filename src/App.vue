@@ -15,7 +15,7 @@
               <th>Search Entry</th>
               <th>First Result</th>
               <th>Second Result</th>
-              <th>Delete</th>
+              <th>Zip Code</th>
             </tr>
           </thead>
           <tbody>
@@ -28,6 +28,9 @@
               </td>
               <td>
                 {{searched.secondResult}}
+              </td>
+              <td>
+                {{searched.zipCode}}
               </td>
             </tr>
           </tbody>
@@ -51,6 +54,10 @@
           <div class="form-group">
             <label for="secondResult">Second Result:</label>
             <input type="text" id="secondResult" class="form-control" v-model="newSearch.secondResult">
+          </div>
+          <div class="form-group">
+            <label for="zipCode">Zip Code:</label>
+            <input type="text" id="zipCode" class="form-control" v-model="newSearch.zipCode">
           </div>
           <input type="submit" class="btn btn-primary" value="Add Search Input Item">
           </input>
@@ -89,7 +96,8 @@ export default {
       newSearch: {
         searchEntry: '',
         firstResult: '',
-        secondResult: ''
+        secondResult: '',
+        zipCode: ''
       }
     }
   },
@@ -99,6 +107,7 @@ export default {
       this.newSearch.searchEntry = '';
       this.newSearch.firstResult = '';
       this.newSearch.secondResult = '';
+      this.newSearch.zipCode = '';
     }
   }
 }
